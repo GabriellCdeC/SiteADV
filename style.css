@@ -1,0 +1,318 @@
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  
+}
+
+html {
+    background-color: #494E65;
+}
+
+/*remove dotted line around the links*/
+a,
+a:active,
+a:focus {
+  outline: none;
+}
+
+ .header {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  display: flex;
+  position: sticky;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  background-color: #bea565;
+  box-shadow: 0 0 30px black;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+ .header a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  padding: 15px 15px;
+  transition: 0.7s;
+  font-size: 1.25em;
+}
+
+ .header .text_header a:hover {
+  background-color: white;
+  border-radius: 15px;
+  border: solid 1px #000000;
+  height: 100vh;
+}
+
+ .header .header_img img {
+  height: 10vh;
+  transition: 0.7s;
+}
+
+.header_text_div{
+    display: flex;
+    direction: row;
+}
+
+.arrow-top {
+  font-size: 30px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  display: none;
+  right: 14px;
+  bottom: 14px;
+  z-index: 100;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  padding-top: 8px;
+  line-height: 31px;
+  transition: 0.7s;
+}
+
+.arrow-top a {
+  transition: 0.7s;
+  color: #2d2d2d;
+  text-decoration: none;
+}
+
+.arrow-top:hover,
+.arrow-top a:hover {
+  background: #e09230;
+  color: white;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.title h1 {
+  color: #e09230;
+}
+
+.title hr {
+  border: solid #038966 1px;
+  height: auto;
+  width: 20vw;
+  margin: 0;
+}
+.footer .div_footer {
+  box-shadow: 0 0 30px black;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  text-align: center;
+  color: white;
+  background: #fece00;
+}
+
+.footer .div_footer .logo_psol {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer .div_footer .logo_psol a img {
+  width: 50%;
+}
+
+.footer .div_footer .redes_sociais {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 3.5em;
+}
+
+.footer .div_footer .redes_sociais_icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer .div_footer .redes_sociais_icons .fa-whatsapp {
+  color: #1aa564;
+}
+
+.footer .div_footer .redes_sociais_icons .fa-youtube-play {
+  color: #ff0000;
+}
+
+.footer .div_footer .redes_sociais_icons .fa-instagram {
+  color: rgb(125, 19, 151);
+}
+
+.footer .div_footer .redes_sociais_icons .fa-facebook-squar {
+  color: #4267b2;
+}
+.footer .div_footer .redes_sociais_icons .fa:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.footer .div_footer .copyright {
+  background: #fece00;
+  z-index: 200;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.filiese {
+  text-align: center;
+  background: #1aa564;
+}
+
+.wrap-menu {
+  display: none;
+}
+
+.img-test-cab {
+  width: 100%;
+  background-color: red;
+}
+
+.img-test-cab img {
+  width: 100%;
+}
+
+main {
+    height:100vh;
+    background-image: url(/files/escalas-de-mao-de-homem-na-tela-em-fundo-escuro_218381-2106.jpg) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #a7a3a2;
+    background-position: right ;
+    opacity: 0.5;
+}
+
+/*Mobile Responsive*/
+@media (max-width: 1100px) {
+   .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+   .header .text_header {
+    display: none;
+  }
+
+  /*Mexendo no menu hamburger*/
+  .wrap-menu {
+    display: block;
+  }
+
+  .btnMenu {
+    display: block;
+    padding: 20px 15px;
+    font-size: 2em;
+  }
+
+  .title hr {
+    margin: 0;
+    width: 70vw;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    transform: translateX(-100%);
+    transition: transform 200ms linear;
+  }
+
+  .menu_open {
+    transform: translateX(0);
+  }
+
+  .fa-bars {
+    font-size: 2em;
+  }
+
+  .btnMenu_open {
+    width: 4vw;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+  }
+
+  .btnMenu_close {
+    background-color: #e09230;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    font-size: 2em;
+    color: white;
+  }
+
+  .menu-item {
+    padding: 20px 15px;
+    border-bottom: 1px solid #000;
+    background-color: #e09230;
+  }
+
+  .menu-item-action {
+    font-size: 12px;
+  }
+
+  /*Fim menu Hamburger*/
+
+  .title {
+    height: 10vh;
+    font-size: medium;
+  }
+
+  .title {
+    height: auto;
+  }
+
+  .title h1 {
+    font-size: x-large;
+    width: auto;
+    padding: 10px 20px;
+  }
+
+  .footer .div_footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer .div_footer .logo_psol {
+    text-align: center;
+  }
+
+  .footer .div_footer .redes_sociais {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5em;
+  }
+
+  .footer .div_footer .logo_pedro {
+    justify-content: center;
+    height: auto;
+  }
+
+  .footer .div_footer .copyright {
+    justify-content: center;
+  }
+
+  .arrow-top {
+    left: 5px;
+  }
+
+  @media (min-width: 1000px) {
+    .footer .div_footer .redes_sociais {
+      margin: 40px 0;
+    }
+
+    .footer .div_footer .redes_sociais {
+      font-size: 4.5em;
+    }
+  }
+}
