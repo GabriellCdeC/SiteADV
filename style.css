@@ -47,11 +47,13 @@ a:focus {
   color: white;
 }
 
-
-
- .header .header_img img {
+.header .header_img img {
   height: 10vh;
   transition: 0.7s;
+}
+
+.header .header_img_mobile{
+  display: none;
 }
 
 .header_text_div{
@@ -112,6 +114,8 @@ main {
   align-items: center;
 }
 
+
+
 .grid_solucoes .img_solucoes img{
     width: 40%;
     height: 20%;
@@ -154,6 +158,18 @@ main {
 
 .header .header_img  {
   display: none;
+}
+
+.header .header_img_mobile{
+  display: block;
+  left: 0;
+  margin-left: 200px;
+  
+}
+
+.header .header_img_mobile img {
+  height: 8vh;
+
 }
 
 /*Mexendo no menu hamburger*/
