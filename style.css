@@ -225,10 +225,14 @@ main {
       height: auto;
       width: auto;
     }
+
+    .special_sol{
+      display: none;
+    }
     .comoChegar {
       display: flex;
       flex-direction: column-reverse;    
       padding: 20px;
     }
-    
+
 }
