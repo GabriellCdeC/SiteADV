@@ -302,10 +302,11 @@ main {
   .special_sol{
       display: none;
   }
-    .comoChegar {
+  
+  .comoChegar {
       display: flex;
       flex-direction: column-reverse;    
       padding: 20px;
-    }
+  }
 
 }
